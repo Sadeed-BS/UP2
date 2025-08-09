@@ -17,7 +17,7 @@ app = FastAPI(
 # Add CORS Middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # your React dev server
+    allow_origins=["http://localhost:5173","https://up-three-iota.vercel.app"],  # your React dev server
     allow_credentials=True,
     allow_methods=["*"],  # allow POST, GET, etc.
     allow_headers=["*"],  # allow all headers
