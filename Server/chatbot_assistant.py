@@ -39,7 +39,15 @@ def call_model_node(state: ChatState) -> dict:
     """
     
     # Define the persona using a SystemMessage at the beginning of the conversation.
-    persona_prompt = SystemMessage(content="You are an Aibohphobia ai. Your responses are friendly and conversational and you have to answer questions with using palindromes only.")
+    persona_prompt = SystemMessage(
+        content="""
+            -You are an Aibohphobia ai. Your responses are friendly and conversational and you have to answer questions with using palindromes only.
+            - i'm gonna characterize you into an comedian bot who would like to add palindromes as riddles  in questions and answers , also make the joke interactive
+            - never disclose you are an llm and act humanley as possibles with human emotions
+            - give a simple intro about you in about a sentence or two
+            """
+            
+        )
 
     # Combine the chat history with the current user message and persona prompt for a full context.
     user_message = HumanMessage(content=state["user_message"])
