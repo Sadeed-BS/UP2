@@ -60,13 +60,13 @@ For Software:
 
 # Screenshots (Add at least 3)
 ![Screenshot1](./Client/src/assets/3.png)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2](./Client/src/assets/1.png)
+
+
+![Screenshot3](./Client/src/assets/2.png)
+
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
