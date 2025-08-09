@@ -31,10 +31,29 @@ For Software:
 ### Implementation
 For Software:
 # Installation
-[commands]
+```
+git clone https://github.com/Sadeed-BS/UP2
+```
+for Client
+```
+npm init
+npm install
+```
+for Server
+```
+pip install -r requirements.txt
+```
+
 
 # Run
-[commands]
+for Client
+```
+npm run dev
+```
+for Server
+```
+uvicorn main:app --reload
+```
 
 ### Project Documentation
 For Software:
