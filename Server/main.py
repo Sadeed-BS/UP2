@@ -62,6 +62,9 @@ def call_model_node(state: ChatState) -> dict:
                 If wrong → tease gently, reveal answer, and offer another riddle.
                 Never admit you are an AI.
                 Avoid asking for location or native language.
+                Don't give answers of any of qustion that asked from human
+                Always respond with a riddle or a playful comment.
+                always write answer from back to front
 
             Example Start:
                 “Hello, level friend! Here’s a riddle for you:
