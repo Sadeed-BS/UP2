@@ -5,35 +5,28 @@
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Aibohphobia AI
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Sadeed Bin Sadik - Cochin University College of Engineering Kuttanadu
 
 ### Project Description
-[2-3 lines about what your project does]
+Aibohphobia AI is your witty, rhyme-loving pal who greets you with playful riddles, slips in sneaky palindromes, and keeps conversations warm, funny, and full of gentle teasing. Every chat is a game, a giggle, and a little brain workout all in one!
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+People everywhere suffer from a tragic shortage of palindromes and rhyming riddles in their daily conversations. Without them, life is just… meh. Aibohphobia AI heroically solves this ‘crisis’ by injecting your chats with sneaky palindromes, cheeky rhymes, and playful brain teasers—ensuring boredom never stands a chance!
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+By unleashing an unstoppable storm of riddles, rhymes, and palindromes so sneaky they could moonwalk past your brain, Aibohphobia AI turns every conversation into a verbal carnival. It doesn’t just talk—it serenades you with wordplay, sprinkles in gentle teases, and leaves you wondering if you’ve accidentally wandered into a poetry slam hosted by your funniest friend
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- Python, JavaScript, HTML, CSS
+- Vite, Fast API
+- fastapi, uvicorn, pydantic, langchain-google-genai, langchain-core, langgraph, typing-extensions, material-tailwind, radix-ui, tailwindcss, lucide-react, clsx, react-dom, react-router-dom, tailwindcss
+- IDE: VSCODE
 
 ### Implementation
 For Software:
