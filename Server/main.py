@@ -6,11 +6,21 @@ from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 import os
 from fastapi import FastAPI
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 # Initialize FastAPI app
 app = FastAPI(
     title="Aibohphobia Chatbot API",
     description="A chatbot that loves palindromes and riddles, powered by LangGraph and Gemini.",
+)
+
+# Add CORS Middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],  # your React dev server
+    allow_credentials=True,
+    allow_methods=["*"],  # allow POST, GET, etc.
+    allow_headers=["*"],  # allow all headers
 )
 
 # Initialize Gemini model (using environment variable for API key)
