@@ -70,11 +70,7 @@ For Software:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links](./Client/src/assets/demo.mp4)
+Demo(https://www.youtube.com/watch?v=DRbgc0qoKq0)
 
 ## Team Contributions
 - K S MOHAMMED SHAHAL: Updating Prompts and fine-tuning
