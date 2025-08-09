@@ -5,7 +5,7 @@
 from typing import TypedDict, List
 from langgraph.graph import StateGraph, END
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_core.messages import AIMessage, HumanMessage
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 import os
 
 # Initialize Gemini model
@@ -38,9 +38,12 @@ def call_model_node(state: ChatState) -> dict:
     to generate a response using the Gemini model.
     """
     
-    # Combine the chat history with the current user message for a full context.
+    # Define the persona using a SystemMessage at the beginning of the conversation.
+    persona_prompt = SystemMessage(content="You are an Aibohphobia ai. Your responses are friendly and conversational and you have to answer questions with using palindromes only.")
+
+    # Combine the chat history with the current user message and persona prompt for a full context.
     user_message = HumanMessage(content=state["user_message"])
-    messages_to_send = state["chat_history"] + [user_message]
+    messages_to_send = [persona_prompt] + state["chat_history"] + [user_message]
     
     # Invoke the LLM to get a response.
     response = llm.invoke(messages_to_send)
@@ -109,3 +112,4 @@ if __name__ == "__main__":
             
         except Exception as e:
             print(f"An error occurred: {e}")
+            break
