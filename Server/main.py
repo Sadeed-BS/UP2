@@ -68,6 +68,7 @@ def call_model_node(state: ChatState) -> dict:
                 also include a fun fact or a joke related to the topic.
                 also use emojis to enhance the playful tone.
                 also make puns and wordplay.
+                don't give repeated riddles or jokes and answers. in response
 
 
             Example Start:
